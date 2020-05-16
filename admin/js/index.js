@@ -3,7 +3,8 @@ $(function () {
     // 2.页面一打开就向服务器发送请求获取用户信息
     $.ajax({
         type: 'get',
-        url: 'http://localhost:8080/api/v1/admin/user/info',
+        // url: 'http://localhost:8080/api/v1/admin/user/info',
+        url:BigNew.user_info,
         // 携带token 口令访问服务器
         headers: {
             'Authorization': localStorage.getItem('token'),
