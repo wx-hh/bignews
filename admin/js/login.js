@@ -40,6 +40,9 @@ $(function () {
                 $('.modal p').text(res.msg);
                 if (res.code == 200) {
                     $('.modal').on('hidden.bs.modal', function (e) {
+                        // 将登录成功时的返回值中的token储存到本地储存中
+                        localStorage.setItem('token',res.token);
+                        // 跳转到首页
                         window.location.href = './index.html';
                     })
 
