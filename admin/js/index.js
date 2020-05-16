@@ -22,4 +22,15 @@ $(function () {
 
         },
     });
+
+
+
+    // 推出登录
+    // 获取事件源注册事件
+    $('.logout').on('click', function () {
+        // 删除本地储存中的token
+        localStorage.removeItem('token');
+        // 跳转回登录页面
+        location.href = './login.html';
+    })
 })
