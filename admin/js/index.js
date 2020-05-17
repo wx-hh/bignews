@@ -6,9 +6,9 @@ $(function () {
         // url: 'http://localhost:8080/api/v1/admin/user/info',
         url: BigNew.user_info,
         // 携带token 口令访问服务器
-        headers: {
-            'Authorization': localStorage.getItem('token'),
-        },
+        // headers: {
+        //     'Authorization': localStorage.getItem('token'),
+        // },
         // 处理请求成功后返回的数据
         success: function (res) {
             // console.log(res);

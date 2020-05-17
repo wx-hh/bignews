@@ -4,9 +4,9 @@ $(function () {
     $.ajax({
         get: 'post',
         url: 'http://localhost:8080/api/v1/admin/user/detail',
-        headers: {
-            'Authorization': localStorage.getItem('token'),
-        },
+        // headers: {
+        //     'Authorization': localStorage.getItem('token'),
+        // },
         success: function (res) {
             // console.log(res);
             // 将获取到的结果渲染到页面上
