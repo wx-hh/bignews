@@ -16,7 +16,7 @@ $(function () {
                 // 将用户的图像渲染到页面上
                 $('.user_info img').attr('src', res.data.userPic);
                 // 将登录用户的名字渲染到页面上
-                $('.user_info span').text(`欢迎  ${res.data.nickname}`);
+                $('.user_info span>i').text(res.data.nickname);
                 // 个人中心的图片也同步设置
                 $('.header_bar img').attr('src', res.data.userPic);
             };
